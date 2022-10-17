@@ -1,0 +1,268 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,italic,700,700italic,900,900italic&display:swap");
+body{
+	font-family:"Lato",sans-serif;
+}
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  /* overflow: hidden; */
+  padding: 40px;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(181, 107, 81, 0.742);
+  padding: 15px;
+  z-index: 100;
+}
+.header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.menu__title {
+  color: rgb(236, 206, 206);
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  text-align: center;
+}
+.menu__list {
+  text-align: center;
+}
+.list__item {
+  display: inline-block;
+  position: relative;
+}
+.list__item:not(:last-child) {
+  margin-right: 50px;
+}
+.list__item:hover .sub-menu {
+  visibility: visible;
+  opacity: 1;
+  top: 100%;
+}
+.list__link {
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 16px;
+  color: #fff;
+}
+.sub-menu {
+  background-color: burlywood;
+  padding: 15px;
+  position: absolute;
+  min-width: 180px;
+  top: 130%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.sub-menu__item {
+  display: inline-block;
+  position: relative;
+}
+.sub-menu__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.sub-menu__link {
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer {
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  padding: 40px;
+  background-color: burlywood;
+  text-decoration: underline;
+  word-spacing: 10px;
+  color: rgb(129, 81, 22);
+}
+.main {
+  min-height: 1800px;
+}
+.main__container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.main__items {
+  position: relative;
+  top: 300px;
+  background-color: rgba(128, 128, 128, 0.386);
+}
+.items {
+  font-size: 35px;
+}
+.items__item {
+  width: 800px;
+  padding: 20px 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+.items__item--1 {
+  background-color: cornflowerblue;
+  position: sticky;
+  top: 150px;
+  z-index: 8;
+}
+.items__item--2 {
+  background-color: rgb(60, 180, 180);
+  top: 100px;
+  z-index: 5;
+}
+
+.items__item--3 {
+  background-color: rgba(107, 201, 95, 0.891);
+  position: relative;
+  bottom: 200px;
+  z-index: 7;
+}
+.items__item--4 {
+  background-color: darkblue;
+}
+.items__item--5 {
+  background-color: blueviolet;
+}
+.items__item--6 {
+  background-color: chartreuse;
+}
+.items__item--7 {
+  background-color: darkorange;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+}
+.items__item--8 {
+  background-color: darkgreen;
+  position: relative;
+  top: 100px;
+  left: 50px;
+}
+.items__item--9 {
+  background-color: cyan;
+}
+.main__city {
+  position: relative;
+  top: 350px;
+}
+.main__city img {
+  min-width: 100%;
+  border-radius: 20px;
+}
+.car-main {
+  position: relative;
+  top: 180px;
+}
+.car-main__body {
+  position: absolute;
+  border-radius: 20% 80% 71% 29% / 50% 49% 51% 50%;
+  transform: rotate(-12deg);
+  left: 200px;
+  bottom: 100px;
+  width: 500px;
+  height: 100px;
+  background-color: rgb(40, 169, 26);
+  border: 10px solid black;
+  z-index: 8;
+}
+.car-main__body::before {
+  position: absolute;
+  top: 10px;
+  left: -25px;
+  content: "";
+  width: 35px;
+  height: 30px;
+  background-color: rgb(147, 190, 163);
+  border-radius: 100% 0% 50% 50% / 50% 100% 0% 50%;
+}
+.car-main__cabine {
+  position: absolute;
+  transform: rotate(-9deg);
+  bottom: 190px;
+  left: 300px;
+  width: 300px;
+  height: 80px;
+  border: 10px solid black;
+  border-bottom: none;
+  border-radius: 43% 57% 71% 29% / 98% 100% 0% 2%;
+  background-color: rgb(32, 144, 19);
+}
+.car-main__wheels {
+  position: relative;
+  top: 120px;
+}
+.wheel {
+  width: 100px;
+  height: 100px;
+  border: 7px solid black;
+  border-radius: 50%;
+  background-color: bisque;
+  z-index: 10;
+}
+.wheels__left {
+  position: absolute;
+  bottom: 35px;
+  left: 300px;
+}
+.wheels__left::before {
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 3px solid black;
+  background-color: rgb(28, 90, 101);
+  border-radius: 50%;
+}
+.wheels__right {
+  position: absolute;
+  bottom: 80px;
+  left: 530px;
+}
+.wheels__right::before {
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 3px solid black;
+  background-color: rgb(28, 90, 101);
+  border-radius: 50%;
+}
+.car-main__windows {
+  position: relative;
+}
+.windows__left {
+  position: relative;
+  transform: rotate(-9deg);
+  bottom: 142px;
+  left: 330px;
+  border-radius: 100% 0% 100% 0% / 92% 100% 0% 8%;
+  z-index: 12;
+}
+.window {
+  background-color: beige;
+  width: 120px;
+  height: 50px;
+  border: 4px solid black;
+}
+.windows__rigth {
+  position: relative;
+  border-radius: 0% 100% 100% 0% / 92% 100% 0% 8%;
+  transform: rotate(-7deg);
+  bottom: 210px;
+  left: 460px;
+  z-index: 13;
+}
